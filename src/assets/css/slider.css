@@ -2,7 +2,13 @@
   position: relative;
 }
 .slider__img {
-  /* background: url(../img/slider_bg01.jpg) no-repeat center center / cover; */
+  width: 100%;
+  height: 100%;
+  background-color: #009743;
+  background-image: url(../img/banner_bg01.png);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 40%;
   background-color: #009743;
 }
 .slider__img .desc {
