@@ -1,0 +1,115 @@
+.tab ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px 42px;
+  margin-bottom: 34px;
+}
+.tab ul li a {
+  position: relative;
+  display: block;
+  padding: 0 14px;
+  border-right: 1px solid #999;
+}
+.tab ul li:last-child a {
+  border-right: none;
+}
+.tab ul li.active a {
+  font-weight: 500;
+  color: #009743;
+}
+.image__inner {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  width: 49%;
+  height: 370px;
+  color: #222;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  border: rgb(230, 230, 230) 1px solid;
+  overflow: hidden;
+}
+.image.img1 {
+  background: url(../img/image_bg01.jpg) no-repeat;
+  background-position: center top;
+  background-size: 70%;
+  transition: all 0.4s ease;
+  border-top-left-radius: 100px;
+}
+.image.img2 {
+  background: url(../img/image_bg02.jpg) no-repeat;
+  background-position: center top;
+  background-size: 70%;
+  transition: all 0.4s ease;
+  border-bottom-right-radius: 100px;
+}
+.image__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  opacity: 1;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s ease;
+  color: #009743;
+}
+.image__title::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 140px;
+  background: #ffcb0a;
+  filter: blur(6px);
+  opacity: 0.9;
+  top: -24px;
+  left: -10px;
+  z-index: -1;
+  transition: all 0.35s ease;
+}
+.image__desc {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-bottom: 24px;
+  opacity: 1;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+.image__btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  opacity: 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #009743;
+  padding: 10px 20px;
+  border-radius: 100px;
+  transition: all 0.4s ease;
+}
+.image:hover {
+  background-position: center center;
+  background-size: 90%;
+}
+
+.image__title:hover::before {
+  top: 200px;
+}
+.image:hover .image__title,
+.image:hover .image__desc {
+  opacity: 0;
+}
+.image:hover .image__btn {
+  bottom: 8%;
+  opacity: 1;
+  cursor: pointer;
+}

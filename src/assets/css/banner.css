@@ -1,0 +1,73 @@
+.banner__inner {
+  position: relative;
+  background: url(../img/banner_bg01.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 45%;
+  padding: 120px 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.banner__inner::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(18deg, #f4c543 75%, #f9dc4a 75%);
+  z-index: -1;
+}
+.banner__inner .title {
+  font-size: 42px;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+  padding-left: 150px;
+}
+
+.banner__inner .title .green {
+  color: #009743;
+  margin-left: 13px;
+}
+.banner__inner .desc {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #222;
+  padding-left: 150px;
+}
+.banner__inner .desc a {
+  position: relative;
+  margin-top: 32px;
+  font-weight: 500;
+  display: inline-block;
+  color: #222;
+  transition: all 0.3s ease;
+}
+.banner__inner .desc a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #009743;
+  left: 0;
+  bottom: -1px;
+  transition: all 0.3s ease;
+}
+.banner__inner .desc a:hover::after {
+  width: 100%;
+}
+
+.banner__inner .desc a:hover {
+  color: #009743;
+}
+.banner__inner .small {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #222;
+  padding-left: 150px;
+  margin-bottom: 10px;
+}

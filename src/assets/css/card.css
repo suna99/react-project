@@ -1,0 +1,43 @@
+.card__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 32%;
+  background: #f5f5f5;
+}
+
+.card__header img {
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+}
+.card__body {
+  padding: 24px;
+}
+.card__body .tit {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.card__body .desc {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #666;
+  margin-bottom: 20px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.card__body .btn {
+  font-size: 16px;
+  color: #009743;
+  display: flex;
+  justify-content: end;
+}
+
+.card__body .btn span {
+  margin-left: 10px;
+}
