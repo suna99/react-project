@@ -31,6 +31,9 @@ function Header(props) {
         <div className="header__member">
           <a href="/">로그인</a>
         </div>
+        <div className="menu">
+          <span>menu</span>
+        </div>
       </div>
     </header>
   );
