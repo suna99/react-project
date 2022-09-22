@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/layout/Header";
-import Slider from "./components/layout/Slider";
-import Image from "./components/layout/Image";
-import ImgText from "./components/layout/ImgText";
-import Card from "./components/layout/Card";
-import Banner from "./components/layout/Banner";
-import Text from "./components/layout/Text";
-import Footer from "./components/layout/Footer";
-import Contents from "./components/layout/Contents";
+import Header from "./components/Header";
+import Slider from "./components/Slider";
+import Image from "./components/Image";
+import ImgText from "./components/ImgText";
+import Card from "./components/Card";
+import Banner from "./components/Banner";
+import Text from "./components/Text";
+import Footer from "./components/Footer";
+import Contents from "./components/Contents";
 
 function App() {
   return (

@@ -8,8 +8,8 @@
 }
 
 .card__header img {
-  height: 320px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: center;
 }
 .card__body {
@@ -40,4 +40,30 @@
 
 .card__body .btn span {
   margin-left: 10px;
+}
+
+@media (max-width: 1080px) {
+  .card {
+    width: 49%;
+    background: #f5f5f5;
+  }
+  .card:last-child{
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  .card__inner {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 99%;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+  }
+
+  .card:last-child{
+    display: block;
+  }
 }

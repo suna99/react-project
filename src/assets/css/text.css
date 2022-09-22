@@ -70,3 +70,24 @@
     text-underline-position: under;
     color: #666;
 }
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .text {
+        width: 49%;
+    }
+
+    .t5, .t6{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text {
+        width: 99%;
+    }
+
+    .t3, .t4{
+        display: none;
+    }
+}

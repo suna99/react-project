@@ -30,10 +30,10 @@ function Footer(props) {
             <h3>헤더 유형</h3>
             <ul>
               <li>
-                <a href="/">헤더 유형01</a>
+                <a href="/">헤더 01</a>
               </li>
               <li>
-                <a href="/">헤더 유형02</a>
+                <a href="/">헤더 02</a>
               </li>
             </ul>
           </div>
@@ -41,10 +41,10 @@ function Footer(props) {
             <h3>슬라이드 유형</h3>
             <ul>
               <li>
-                <a href="/">슬라이드 유형01</a>
+                <a href="/">슬라이드 01</a>
               </li>
               <li>
-                <a href="/">슬라이드 유형01</a>
+                <a href="/">슬라이드 02</a>
               </li>
             </ul>
           </div>
@@ -52,19 +52,19 @@ function Footer(props) {
             <h3>이미지 유형</h3>
             <ul>
               <li>
-                <a href="/">이미지 유형01</a>
+                <a href="/">이미지 01</a>
               </li>
               <li>
-                <a href="/">이미지 유형02</a>
+                <a href="/">이미지 02</a>
               </li>
               <li>
-                <a href="/">이미지/텍스트 유형01</a>
+                <a href="/">이미지/텍스트 01</a>
               </li>
               <li>
-                <a href="/">이미지/텍스트 유형01</a>
+                <a href="/">이미지/텍스트 02</a>
               </li>
               <li>
-                <a href="/">텍스트 유형01</a>
+                <a href="/">텍스트 01</a>
               </li>
             </ul>
           </div>
@@ -72,13 +72,13 @@ function Footer(props) {
             <h3>카드 유형</h3>
             <ul>
               <li>
-                <a href="/">카드 유형01</a>
+                <a href="/">카드 01</a>
               </li>
               <li>
-                <a href="/">카드 유형02</a>
+                <a href="/">카드 02</a>
               </li>
               <li>
-                <a href="/">카드 유형03</a>
+                <a href="/">카드 03</a>
               </li>
             </ul>
           </div>
@@ -86,13 +86,13 @@ function Footer(props) {
             <h3>푸터 유형</h3>
             <ul>
               <li>
-                <a href="/">푸터 메뉴 유형01</a>
+                <a href="/">푸터 메뉴 01</a>
               </li>
               <li>
-                <a href="/">푸터 컨택트 유형02</a>
+                <a href="/">푸터 컨택트 02</a>
               </li>
               <li>
-                <a href="/">푸터 이메일 유형03</a>
+                <a href="/">푸터 이메일 03</a>
               </li>
             </ul>
           </div>

@@ -19,6 +19,7 @@
   word-break: keep-all;
   line-height: 1.4;
   margin-bottom: 10px;
+  white-space: pre-wrap;
 }
 .imgText__txt .desc {
   font-size: 18px;
@@ -36,16 +37,16 @@
   position: relative;
   padding-left: 20px;
 }
+
 .imgText__txt .list li::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  background: #009743;
-  border-radius: 50%;
-  position: absolute;
-  left: 5px;
-  top: 9px;
+  content: "\2022"; 
+  color: #009743;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em; 
+  margin-left: -1em;
 }
+
 .imgText__txt .list li a {
   color: #666;
 }
@@ -74,4 +75,54 @@
 .imgText__img.img2 {
   background: url(../img/imgText_bg02.jpg) no-repeat bottom / cover;
   background-color: #fff;
+}
+
+
+@media (max-width: 867px) {
+  .imgText__inner {
+    flex-direction: column;
+  }
+
+  .imgText__inner > div {
+    width: 99%;
+    height: 400px;
+  }
+
+  .imgText__txt .title {
+    font-size: 32px;
+  }
+
+  .imgText__txt .desc {
+    font-size: 16px;
+  }
+
+  .imgText__img__wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .imgText__img {
+    width: 49%;
+    height: 400px;
+  }
+
+  .imgText__img a {
+    padding: 10px 20px;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  /* .imgText__img.img1,
+  .imgText__img.img2{
+    display: none;
+  } */
+
+  .imgText__inner > div {
+    width: 100%;
+    text-align: center;
+  }
 }
